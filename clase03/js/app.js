@@ -8,8 +8,13 @@ function escribirTablaMultiplicar(j){
 		console.log(j + "x" + i + "= " + j * i);
   }
 }
-
-escribirTablaMultiplicar(5);
-  console.log("========================================");
-escribirTablaMultiplicar(6);
-  console.log("========================================");
+n1=prompt("ingrese un numero");
+n2=prompt("Ingrese otro numero");
+if(n1<n2){
+  escribirTablaMultiplicar(n1);
+    console.log("========================================");
+  escribirTablaMultiplicar(n2);
+    console.log("========================================");
+}else{
+  alert("No se puede imprimir");
+}
